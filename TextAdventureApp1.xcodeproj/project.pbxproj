@@ -11,6 +11,10 @@
 		1284726D2A3F82F100261E00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1284726C2A3F82F100261E00 /* ContentView.swift */; };
 		1284726F2A3F82F300261E00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1284726E2A3F82F300261E00 /* Assets.xcassets */; };
 		128472722A3F82F300261E00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128472712A3F82F300261E00 /* Preview Assets.xcassets */; };
+		128472792A3F834900261E00 /* AdventureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128472782A3F834900261E00 /* AdventureView.swift */; };
+		1284727B2A3F837400261E00 /* ChoicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1284727A2A3F837400261E00 /* ChoicesView.swift */; };
+		1284727D2A3F839700261E00 /* AdventureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1284727C2A3F839700261E00 /* AdventureController.swift */; };
+		1284727F2A3F83B700261E00 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1284727E2A3F83B700261E00 /* Choice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		1284726C2A3F82F100261E00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1284726E2A3F82F300261E00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		128472712A3F82F300261E00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		128472782A3F834900261E00 /* AdventureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureView.swift; sourceTree = "<group>"; };
+		1284727A2A3F837400261E00 /* ChoicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoicesView.swift; sourceTree = "<group>"; };
+		1284727C2A3F839700261E00 /* AdventureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureController.swift; sourceTree = "<group>"; };
+		1284727E2A3F83B700261E00 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +59,10 @@
 		128472692A3F82F100261E00 /* TextAdventureApp1 */ = {
 			isa = PBXGroup;
 			children = (
+				128472822A3F92F500261E00 /* Model */,
+				128472832A3F930900261E00 /* View */,
+				128472842A3F931600261E00 /* Control */,
 				1284726A2A3F82F100261E00 /* TextAdventureApp1App.swift */,
-				1284726C2A3F82F100261E00 /* ContentView.swift */,
-				1284726E2A3F82F300261E00 /* Assets.xcassets */,
 				128472702A3F82F300261E00 /* Preview Content */,
 			);
 			path = TextAdventureApp1;
@@ -62,9 +71,36 @@
 		128472702A3F82F300261E00 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				1284726E2A3F82F300261E00 /* Assets.xcassets */,
 				128472712A3F82F300261E00 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		128472822A3F92F500261E00 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1284727E2A3F83B700261E00 /* Choice.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		128472832A3F930900261E00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1284726C2A3F82F100261E00 /* ContentView.swift */,
+				128472782A3F834900261E00 /* AdventureView.swift */,
+				1284727A2A3F837400261E00 /* ChoicesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		128472842A3F931600261E00 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				1284727C2A3F839700261E00 /* AdventureController.swift */,
+			);
+			path = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1284727F2A3F83B700261E00 /* Choice.swift in Sources */,
 				1284726D2A3F82F100261E00 /* ContentView.swift in Sources */,
+				1284727B2A3F837400261E00 /* ChoicesView.swift in Sources */,
+				1284727D2A3F839700261E00 /* AdventureController.swift in Sources */,
 				1284726B2A3F82F100261E00 /* TextAdventureApp1App.swift in Sources */,
+				128472792A3F834900261E00 /* AdventureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
