@@ -4,8 +4,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             AdventureView()
-                .navigationBarTitle("MyAdventure")
-                .navigationViewStyle(StackNavigationViewStyle()) // Use StackNavigationViewStyle
+                .navigationBarTitle("The Nightmare")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .edgesIgnoringSafeArea(.all) // Add this modifier
     }
 }
